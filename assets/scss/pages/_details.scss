@@ -1,0 +1,44 @@
+#detail-section {
+  padding: 8% 0;
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    .row {
+      .card-div {
+        .card {
+          border: transparent;
+          background-color: transparent;
+          .img-div {
+            padding: 15%;
+          }
+          .text {
+            p {
+              color: gray;
+              font-size: 16px;
+              font-weight: 100;
+            }
+          }
+          .btns {
+            justify-content: space-between;
+            a,
+            button {
+              background-color: rgb(255, 168, 0);
+              border: transparent;
+              text-decoration: none;
+              color: white;
+              padding: 1% 8%;
+              &:hover {
+                color: black;
+                background-color: white;
+                transition: 0.4s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width:991px) {
+    padding: 8% 10%;
+  }
+}

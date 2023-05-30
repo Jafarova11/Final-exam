@@ -1,0 +1,21 @@
+#add-edit {
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  form {
+    width: 50%;
+    .btn {
+      background-color: rgb(255, 168, 0);
+      border: transparent;
+      text-decoration: none;
+      color: white;
+      padding: 2% 5%;
+      &:hover {
+        color: black;
+        background-color: white;
+        transition: 0.4s;
+      }
+    }
+  }
+}

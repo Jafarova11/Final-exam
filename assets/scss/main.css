@@ -1,0 +1,492 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+* header .header-top {
+  background-color: black;
+  padding: 1% 0;
+}
+* header .header-top .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+* header .header-top .container ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+* header .header-top .container ul li {
+  color: white;
+  font-size: 13px;
+}
+* header .header-top .container ul li .fa-bars {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  * header .header-top .container ul li .fa-bars {
+    display: block;
+  }
+}
+* header .header-top .container ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+* header .header-top .container ul .register,
+* header .header-top .container ul .login {
+  color: rgb(255, 168, 0);
+}
+* header .header-top .container ul .register:hover,
+* header .header-top .container ul .login:hover {
+  color: white;
+  transition: 0.3s;
+}
+* header nav {
+  background-color: rgb(255, 168, 0);
+  padding: 1% 0;
+}
+* header nav .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+* header nav .container ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+* header nav .container ul li a:hover {
+  color: black;
+}
+* header nav .container ul li a,
+* header nav .container ul li i {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+* header nav .container ul li .dropdown {
+  padding-top: 2px;
+}
+* header nav .container ul li .dropdown:hover button {
+  color: black;
+}
+* header nav .container ul li .dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: rgb(255, 168, 0);
+  border: none;
+  border-radius: 0;
+}
+* header nav .container ul li .dropdown:hover .dropdown-menu li a {
+  color: white;
+}
+* header nav .container ul li .dropdown:hover .dropdown-menu li a:hover {
+  background-color: rgb(255, 168, 0);
+  color: black;
+}
+* header nav .container ul li .dropdown button {
+  background-color: transparent;
+  border: transparent;
+  color: white;
+  font-size: 13px;
+}
+* header nav .container ul li .dropdown .dropdown-menu {
+  display: none;
+}
+* header nav .container .contact li .fa-phone,
+* header nav .container .contact li .fa-envelope {
+  color: black;
+}
+* header nav .container .contact li a {
+  font-weight: 600;
+}
+* header nav .container .contact li .fa-magnifying-glass:hover {
+  color: black;
+  cursor: pointer;
+}
+@media screen and (max-width: 991px) {
+  * header nav,
+  * header .register,
+  * header .login {
+    display: none;
+  }
+}
+* #slide #carouselExampleCaptions .carousel-inner {
+  position: relative;
+}
+* #slide #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
+  position: absolute;
+  bottom: 200px;
+  left: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8% 0;
+}
+* #slide #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption h1 {
+  font-size: 60px;
+  font-weight: 500;
+}
+* #slide #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .btn {
+  color: white;
+  background-color: rgb(255, 168, 0);
+  border-radius: 0;
+  padding: 1% 3%;
+}
+* #slide #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .btn:hover {
+  background-color: white;
+  color: rgb(255, 168, 0);
+  transition: 0.4s;
+}
+* #buy-sell {
+  padding: 8% 0;
+}
+* #buy-sell .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+* #buy-sell .container .left,
+* #buy-sell .container .right {
+  width: 50%;
+}
+* #buy-sell .container .left {
+  padding: 6%;
+}
+* #buy-sell .container .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+* #buy-sell .container .right::before {
+  content: "";
+  border: 2px solid rgb(255, 168, 0);
+  display: block;
+  width: 10%;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 991px) {
+  * #buy-sell .container .right::before {
+    content: none;
+  }
+}
+* #buy-sell .container .right p {
+  color: gray;
+  font-size: 15px;
+  font-weight: 200;
+}
+* #buy-sell .container .right .btn {
+  color: white;
+  background-color: rgb(255, 168, 0);
+  border-radius: 0;
+  padding: 2% 3%;
+  width: 35%;
+  font-size: 14px;
+  font-weight: 600;
+}
+* #buy-sell .container .right .btn:hover {
+  background-color: white;
+  color: rgb(255, 168, 0);
+  transition: 0.4s;
+}
+@media screen and (max-width: 991px) {
+  * #buy-sell .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  * #buy-sell .container .left,
+  * #buy-sell .container .right {
+    width: 80%;
+  }
+}
+* #active-section {
+  background-color: rgb(245, 249, 250);
+  padding: 8% 0;
+}
+* #active-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+* #active-section .container .top::before {
+  content: "";
+  border: 2px solid rgb(255, 168, 0);
+  display: block;
+  width: 7%;
+  margin-left: 450px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 991px) {
+  * #active-section .container .top::before {
+    content: none;
+  }
+}
+* #active-section .container .top p {
+  color: gray;
+  font-size: 15px;
+  font-weight: 200;
+}
+* #active-section .container .top .btn {
+  color: white;
+  background-color: rgb(255, 168, 0);
+  border-radius: 0;
+  padding: 2% 3%;
+  width: 35%;
+  font-size: 14px;
+  font-weight: 600;
+}
+* #active-section .container .search-select {
+  display: flex;
+  justify-content: space-between;
+}
+* #active-section .container .search-select input,
+* #active-section .container .search-select select {
+  padding: 1% 3%;
+  border: transparent;
+  outline: none;
+}
+* #active-section .container .cards .card-div .card {
+  border: transparent;
+  background-color: transparent;
+}
+* #active-section .container .cards .card-div .card .img-div {
+  padding: 15%;
+}
+* #active-section .container .cards .card-div .card .text p {
+  color: gray;
+  font-size: 16px;
+  font-weight: 100;
+}
+* #active-section .container .cards .card-div .card .btns {
+  row-gap: 10px;
+}
+* #active-section .container .cards .card-div .card .btns a,
+* #active-section .container .cards .card-div .card .btns button {
+  background-color: rgb(255, 168, 0);
+  border: transparent;
+  text-decoration: none;
+  color: white;
+  padding: 1% 0;
+}
+* #active-section .container .cards .card-div .card .btns a:hover,
+* #active-section .container .cards .card-div .card .btns button:hover {
+  color: black;
+  background-color: white;
+  transition: 0.4s;
+}
+@media screen and (max-width: 991px) {
+  * #active-section {
+    padding: 8% 10%;
+  }
+  * #active-section .search-select {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+* #latest-news {
+  padding: 8% 0;
+}
+* #latest-news .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+* #latest-news .container .top {
+  text-align: center;
+}
+* #latest-news .container .top::before {
+  content: "";
+  border: 2px solid rgb(255, 168, 0);
+  display: block;
+  width: 7%;
+  margin-left: 450px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 991px) {
+  * #latest-news .container .top::before {
+    content: none;
+  }
+}
+* #latest-news .container .top p {
+  color: gray;
+  font-size: 15px;
+  font-weight: 200;
+}
+* #latest-news .container .news-div .card {
+  border: transparent;
+  background-color: rgb(245, 249, 250);
+}
+* #latest-news .container .news-div .card .text {
+  padding: 1% 8%;
+  position: relative;
+}
+* #latest-news .container .news-div .card .text h5 {
+  font-size: 20px;
+}
+* #latest-news .container .news-div .card .text p {
+  color: gray;
+  font-weight: 100;
+}
+* #latest-news .container .news-div .card .text .btn {
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+  color: white;
+  background-color: rgb(255, 168, 0);
+  border-radius: 0;
+  padding: 3% 4%;
+  width: 35%;
+  font-size: 10px;
+  font-weight: 600;
+}
+* #latest-news .container .news-div .card .text .btn:hover {
+  background-color: white;
+  color: rgb(255, 168, 0);
+  transition: 0.4s;
+}
+@media screen and (max-width: 991px) {
+  * #latest-news {
+    padding: 8% 10%;
+  }
+}
+* footer {
+  background-color: rgb(13, 16, 22);
+  padding: 1% 0;
+}
+* footer .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  color: gray;
+  font-size: 13px;
+}
+* footer .container a {
+  text-decoration: none;
+}
+* footer .container .footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+* footer .container .footer-bottom ul {
+  gap: 15px;
+}
+* footer .container .footer-bottom ul li a {
+  color: gray;
+}
+* footer .container .footer-bottom ul li a:hover {
+  color: rgb(255, 168, 0);
+  transition: 0.4s;
+}
+
+#add-edit {
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#add-edit form {
+  width: 50%;
+}
+#add-edit form .btn {
+  background-color: rgb(255, 168, 0);
+  border: transparent;
+  text-decoration: none;
+  color: white;
+  padding: 2% 5%;
+}
+#add-edit form .btn:hover {
+  color: black;
+  background-color: white;
+  transition: 0.4s;
+}
+
+#fav-section {
+  padding: 8% 0;
+}
+#fav-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#fav-section .container .fav-cards .card-div .card {
+  border: transparent;
+  background-color: transparent;
+  text-align: center;
+}
+#fav-section .container .fav-cards .card-div .card .img-div {
+  padding: 15%;
+}
+#fav-section .container .fav-cards .card-div .card .text p {
+  color: gray;
+  font-size: 16px;
+  font-weight: 100;
+}
+#fav-section .container .fav-cards .card-div .card .btns {
+  row-gap: 10px;
+}
+#fav-section .container .fav-cards .card-div .card .btns a,
+#fav-section .container .fav-cards .card-div .card .btns button {
+  background-color: rgb(255, 168, 0);
+  border: transparent;
+  text-decoration: none;
+  color: white;
+  padding: 1% 0;
+}
+#fav-section .container .fav-cards .card-div .card .btns a:hover,
+#fav-section .container .fav-cards .card-div .card .btns button:hover {
+  color: black;
+  background-color: white;
+  transition: 0.4s;
+}
+@media screen and (max-width: 991px) {
+  #fav-section {
+    padding: 8% 10%;
+  }
+}
+
+#detail-section {
+  padding: 8% 0;
+}
+#detail-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#detail-section .container .row .card-div .card {
+  border: transparent;
+  background-color: transparent;
+}
+#detail-section .container .row .card-div .card .img-div {
+  padding: 15%;
+}
+#detail-section .container .row .card-div .card .text p {
+  color: gray;
+  font-size: 16px;
+  font-weight: 100;
+}
+#detail-section .container .row .card-div .card .btns {
+  justify-content: space-between;
+}
+#detail-section .container .row .card-div .card .btns a,
+#detail-section .container .row .card-div .card .btns button {
+  background-color: rgb(255, 168, 0);
+  border: transparent;
+  text-decoration: none;
+  color: white;
+  padding: 1% 8%;
+}
+#detail-section .container .row .card-div .card .btns a:hover,
+#detail-section .container .row .card-div .card .btns button:hover {
+  color: black;
+  background-color: white;
+  transition: 0.4s;
+}
+@media screen and (max-width: 991px) {
+  #detail-section {
+    padding: 8% 10%;
+  }
+}/*# sourceMappingURL=main.css.map */
